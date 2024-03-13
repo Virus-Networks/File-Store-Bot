@@ -46,7 +46,7 @@ DB_NAME = environ.get("DB_NAME", "vs_bot")
 
 # Bot Information
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
-BOT_USERNAME = environ.get("BOT_USERNAME", "DEADP00L_FILTER_BOT") # your bot username without @
+BOT_USERNAME = environ.get("BOT_USERNAME", "VS_FILE_STORE_BOT") # your bot username without @
 PICS = (environ.get('PICS', 'https://graph.org/file/82ef767ffebe3a948e476.jpg https://graph.org/file/82ef767ffebe3a948e476.jpg')).split() # Bot Start Picture
 
 # Auto Delete Information
