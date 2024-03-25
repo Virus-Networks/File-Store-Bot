@@ -81,7 +81,7 @@ class Var(object):
     WORKERS = int(getenv('WORKERS', '4'))
     BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1001995831309'))
     PORT = int(getenv('PORT', 8080))
-    BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
+    BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', 'https://vs-file-store-bot-7d8b69f331b7.herokuapp.com'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
@@ -94,9 +94,9 @@ class Var(object):
     FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
     HAS_SSL=bool(getenv('HAS_SSL',False))
     if HAS_SSL:
-        URL = ""
+        URL = "https://vs-file-store-bot-7d8b69f331b7.herokuapp.com/".format(FQDN)
     else:
-        URL = ""
+        URL = "https://vs-file-store-bot-7d8b69f331b7.herokuapp.com/".format(FQDN)
 
 
 
