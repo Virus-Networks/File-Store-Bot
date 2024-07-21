@@ -96,7 +96,7 @@ async def start():
     app = web.AppRunner(await web_server())
     await StreamBot.send_message(chat_id=LOG_CHANNEL, text=script.RESTART_TXT.format(today, time))
     await app.setup()
-    bind_address = "0.0.0.0"
+    bind_address = "8.0.8.0"
     await web.TCPSite(app, bind_address, Var.PORT).start()
     await restart_bots()
     print("Bot Started Powered By @VJ_Botz")
