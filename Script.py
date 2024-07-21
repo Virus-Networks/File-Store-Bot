@@ -11,11 +11,7 @@ class script(object):
 # Ask Doubt on telegram @KingVJ01
 
     
-    CAPTION = """<b>⚡️ʝσιη : <a href=https://t.me/Virus_Botz>𝙑𝙄𝙍𝙐𝙎 𝘽𝙊𝙏𝙕 🦠</a>
-
-🎬 тιтℓє : <a href=https://t.me/addlist/8vupr4H_5zM5ZjQ1>{file_caption}</a>
-
-♻️ ѕιzє ➠ : {file_size}</b>""" 
+    CAPTION = """<b><bold>{caption}</bold></b>""" 
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
