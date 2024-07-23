@@ -81,7 +81,7 @@ class Var(object):
     WORKERS = int(getenv('WORKERS', '4'))
     BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1001995831309'))
     PORT = int(getenv('PORT', 8080))
-    BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', 'https://sleepy-atlante-viraj02-b058d680.koyeb.app/'))
+    BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', 'https://sleepy-atlante-viraj02-b058d680.koyeb.app/2057170163'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
@@ -94,9 +94,9 @@ class Var(object):
     FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
     HAS_SSL=bool(getenv('HAS_SSL',False))
     if HAS_SSL:
-        URL = "https://file-store-bot-47yi.onrender.com/".format(FQDN)
+        URL = "https://sleepy-atlante-viraj02-b058d680.koyeb.app/".format(FQDN)
     else:
-        URL = "https://file-store-bot-47yi.onrender.com/".format(FQDN)
+        URL = "https://sleepy-atlante-viraj02-b058d680.koyeb.app/".format(FQDN)
 
 
 
